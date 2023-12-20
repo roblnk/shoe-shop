@@ -1,2 +1,2 @@
-# shoe-shop
-Springboot and React Web for Shoes Shop
+# A Production Level E Commerce Full Stack Project With Spring Boot, React, MySQL
+
