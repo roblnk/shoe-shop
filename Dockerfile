@@ -22,3 +22,4 @@ FROM maven:3.8.4-openjdk-17
 EXPOSE 7586
 COPY --from=build /app/backend/target/roblnk-1.jar app.jar
 CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "app.jar"]
+
