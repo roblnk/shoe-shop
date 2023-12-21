@@ -42,6 +42,10 @@ public class AuthenticationController {
     private final CloudinaryService cloudinaryService;
     private final LogoutService logoutService;
 
+    @GetMapping()
+    public ResponseEntity<?>lmao(){
+        return ResponseEntity.ok("Hello");
+    }
     @PostMapping("/register")
     public ResponseEntity<?> register(@Valid @RequestBody RegisterRequest request, BindingResult bindingResult){
         if (bindingResult.hasErrors()){

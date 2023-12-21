@@ -12,6 +12,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins(
+                        "https://shoe-shop.up.railway.app",
                         "http://localhost:3000",
                         "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
                         "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html**",
@@ -19,7 +20,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
                         "https://sandbox.vnpayment.vn/merchant_webapi/api/transaction"
                         ) // Thay bằng URL của ứng dụng React
                 .allowedHeaders("*")
-                .allowedMethods("*")
+                .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowCredentials(true);
 
     }
