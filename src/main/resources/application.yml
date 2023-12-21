@@ -13,7 +13,7 @@ spring:
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: 1g4b2h3BG3DeHDchbGb2e4aCa1geaAfg
-        url: mysql://viaduct.proxy.rlwy.net:18946/e_commerce_shoes
+        url: jdbc:mysql://root:1g4b2h3BG3DeHDchbGb2e4aCa1geaAfg@viaduct.proxy.rlwy.net:18946/e_commerce_shoes
         username: root
     devtools:
         livereload:
