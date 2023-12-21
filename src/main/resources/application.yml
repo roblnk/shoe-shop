@@ -10,16 +10,14 @@ cloudinary:
     cloud-name: dmvncmrci
     secure: true
 server:
-    port: 7586
+    port: 18946
     tomcat:
         redirect-context-root: false
 spring:
-    config:
-        import: optional:file:/src/main/resources/.env[.yml]
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        password: ${MYSQL_ROOT_PASSWORD:123456}
-        url: jdbc:mysql://${MYSQLDB_HOST:localhost}:${MYSQLDB_DOCKER_PORT:3306}/${MYSQLDB_DATABASE:e_commerce_shoes}?useSSL=false&allowPublicKeyRetrieval=true
+        password: 123456
+        url: mysql://root:1g4b2h3BG3DeHDchbGb2e4aCa1geaAfg@viaduct.proxy.rlwy.net:18946/railway
         username: root
     devtools:
         livereload:
