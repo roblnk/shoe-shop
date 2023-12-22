@@ -14,6 +14,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins(
                         ClientSide.CLIENT_SITE_URL,
+                        ClientSide.CLIENT_SITE_URL_DEPLOY,
                         "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
                         "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html**",
                         "https://sandbox.vnpayment.vn/**",
